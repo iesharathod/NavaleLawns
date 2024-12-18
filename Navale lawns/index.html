@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navale Lawns</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo"><img src="temp/logo.png" alt="Navale Lawns Logo" class="logo-img">Navale Lawns</a>
+           <!-- Updated Navigation -->
+                <nav class="nav">
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Celebrate Your Special Moments at <span>Navale Lawns</span></h1>
+        
+        <a href="#contact" class="btn btn-primary">Join Us</a>
+    </div>
+    <div class="hero-image-container">
+       <!--<img src="temp/grand.jpeg" alt="Wedding Setup" class="hero-image">-->  
+        <div class="hero-overlay">
+            <h2>Make Your Dream Wedding a Reality</h2>
+            <p>Elegance, luxury, and breathtaking views await you at Navale Lawns. From intimate ceremonies to grand celebrations, we bring your vision to life.</p>
+        </div>
+    </div>
+</section>
+
+
+   <!-- About Section -->
+
+
+
+    <!-- Gallery Section -->
+    <!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="temp/image4.jpeg" alt="Lawn View" onclick="openModal('modal1')">
+                <h3>Lawn View</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="temp/images3.jpeg" alt="Wedding Setup" onclick="openModal('modal2')">
+                <h3>Wedding Setup</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="temp/hall.jpeg" alt="Banquet Hall" onclick="openModal('modal3')">
+                <h3>Banquet Hall</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="temp/lights.jpeg" alt="Lighting Decoration" onclick="openModal('modal4')">
+                <h3>Lighting Decoration</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Windows for Detailed Views -->
+<div id="modal1" class="modal">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <div class="modal-content">
+        <h3>Lawn View</h3>
+        <p>Detailed information about the Lawn View...</p>
+        <img src="temp/image4.jpeg" alt="Lawn View">
+    </div>
+</div>
+<div id="modal2" class="modal">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <div class="modal-content">
+        <h3>Wedding Setup</h3>
+        <p>Detailed information about the Wedding Setup...</p>
+        <img src="temp/images3.jpeg" alt="Wedding Setup">
+    </div>
+</div>
+<div id="modal3" class="modal">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <div class="modal-content">
+        <h3>Banquet Hall</h3>
+        <p>Detailed information about the Banquet Hall...</p>
+        <img src="temp/hall.jpeg" alt="Banquet Hall">
+    </div>
+</div>
+<div id="modal4" class="modal">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <div class="modal-content">
+        <h3>Lighting Decoration</h3>
+        <p>Detailed information about Lighting Decoration...</p>
+        <img src="temp/lights.jpeg" alt="Lighting Decoration">
+    </div>
+</div>
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-tree"></i>
+                    <h3>Spacious Lawn</h3>
+                    <p>Accommodating large gatherings in a serene natural setting.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h3>Catering</h3>
+                    <p>Exquisite dining options tailored to your taste.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-lights-holiday"></i>
+                    <h3>Decorations</h3>
+                    <p>Custom themes to elevate your event’s aesthetics.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-car"></i>
+                    <h3>Ample Parking</h3>
+                    <p>Convenient parking facilities for all your guests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media" class="social-media">
+        <div class="container">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/p/Navale-Lawns-100063883000671/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/navale_lawns/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <form action="submit_form" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-phone"></i> +91-9011391135</p>
+                <p><i class="fa-solid fa-map-marker-alt"></i> FR5F+73J, Navale Lawns, Near Navale Flyover, Narhe Pune Bangalore, Highway, Pune, Maharashtra 411041</p>
+                <!-- WhatsApp link -->
+                <a href="https://wa.me/+91 9011391135" target="_blank" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Developed by IR, 2024 Navale Lawns. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
